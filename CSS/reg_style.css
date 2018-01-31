@@ -1,0 +1,262 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(dairy.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+}
+.loginBox
+{
+	position: absolute;
+	top: 50%;
+	left: 82%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 640px;
+	padding: 50px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.6);
+	box-shadow: 1px 1px 30px gray;
+}
+.user
+{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-80px/2);
+	left: calc(54% - 50px);
+}
+h2
+{
+	font-family: Hobo Std;
+	margin: 0;
+	font-size: 18px;
+	padding: 0 0 20px;
+	color: #efed40;
+	text-align: center;
+}
+.loginBox p
+{
+	font-family: Comic Sans MS;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.loginBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+	font-family: Comic Sans MS;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+::placeholder
+{
+	color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]
+{
+		font-family: Comic Sans MS;
+	border: none;
+	outline: none;
+	height: 40px;
+	color: black;
+	font-size: 18px;
+	background: #808000;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover
+{
+	font-family: Comic Sans MS;
+	background: #efed40;
+	color: #262626;
+}
+.loginBox a
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+/*check box ****************************************************************.*/
+
+/*Roating text*/
+
+.text {
+  font-family: Masque;
+  text-shadow: 2px 2px 4px white;
+  font-weight: 600;
+  font-size: 45px;
+  position: absolute;
+  width: 450px;
+  left: 44%;
+  margin-left: -625px;
+  height: 40px;
+  top: 7%;
+  margin-top: -20px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 300px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+          transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.speed {
+  color: #8e44ad;
+}
+
+.catchy {
+  color: #2980b9;
+}
+
+.secure {
+  color: #c0392b;
+}
+
+.simple{
+  color:  #2874a6 ;
+}
+
+.durable {
+  color: #2c3e50;
+}
+.strong {
+  color: green;
+}
+.sole{
+  color:  #ff1d46 ;
+}
+
+
+
+/*Foot bar*/
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height:5%;
+   width: 100%;
+  background: rgba(0,0,0,.6);
+   color: white;
+   text-align: center;
+}
+.footer p{
+	padding-top: 0.5%; 
+	font-family: Comic Sans MS;
+	color: gray;
+	font-size: 15px;
+	
+}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+/*Scrolling text*/
+#scroll{
+	position: absolute;
+	top: 53%;
+	left: 36%;
+	transform: translate(-50%,-50%);
+	width: 1000px;
+	height: 595px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+	box-shadow: 1px 1px 30px gray;
+}
+#scroll_text{
+		
+		height: 110%;
+		font-family: Comic Sans MS;
+	color:  #aed6f1 ;
+	font-size: 20px;
+}
+
+
+/*HOme Button*/
+#register{
+	position: absolute;
+	top: 6%;
+	left: 61.5%;
+	font-family: Comic Sans MS;
+	border: none;
+	outline: none;
+	height: 38px;
+	width: 7%;
+	color: white;
+	font-size: 18px;
+	background:  #b7950b   ;
+	cursor: pointer;
+	border-radius: 40px 0px 0px 40px;
+	box-shadow: -4px 2px 10px black;
+	
+}
+#register:hover
+{
+	font-family: Comic Sans MS;
+	background:  green ;
+	color: white;
+}

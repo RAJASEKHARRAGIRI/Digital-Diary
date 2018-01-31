@@ -1,0 +1,218 @@
+body
+{
+	
+	margin: 0;
+	padding: 0;
+	background: url(dairy.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+
+/*Roating text*/
+
+.text {
+  font-family: Masque;
+  text-shadow: 2px 2px 4px white;
+  font-weight: 600;
+  font-size: 50px;
+  position: absolute;
+  width: 450px;
+  left: 43%;
+  margin-left: -625px;
+  height: 40px;
+  top: 8%;
+  margin-top: -20px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 300px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+          transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.speed {
+  color: #8e44ad;
+}
+
+.catchy {
+  color: #2980b9;
+}
+
+.secure {
+  color: #c0392b;
+}
+
+.simple{
+  color:  #2874a6 ;
+}
+
+.durable {
+  color: #2c3e50;
+}
+.strong {
+  color: green;
+}
+.sole{
+  color:  #ff1d46 ;
+}
+
+/*Foot bar*/
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height:5%;
+   width: 100%;
+  background: rgba(0,0,0,.6);
+   color: white;
+   text-align: center;
+}
+.footer p{
+	padding-top: 0.5%; 
+	font-family: Comic Sans MS;
+	color: gray;
+	font-size: 15px;
+	
+}
+
+#tagline p{
+	padding-top: 4.8%; 
+	padding-left: 2.3%; 
+	font-family: Comic Sans MS;
+	color: black;
+	font-size: 22px;
+	text-shadow: 2px 2px 4px white;
+}
+/*Scrolling text*/
+#scroll{
+	position: absolute;
+	top: 53%;
+	left: 41.5%;
+	transform: translate(-50%,-50%);
+	width: 1210px;
+	height: 480px;
+	padding: 60px 20px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.4);
+	box-shadow: 1px 1px 30px gray;
+}
+#scroll_text{
+		
+		height: 110%;
+		font-family: Comic Sans MS;
+	color:#aed6f1 ;
+	font-size: 20px;
+}
+
+#para{
+	height: 110%;
+    font-family: Comic Sans MS;
+	color: #f7f9f9  ;
+	letter-spacing: 0px;
+	font-size: 20px;
+	padding-left: 50px;
+	padding-top: 35px;
+	padding-right: 300px;
+}
+
+/*About Button*/
+#about{
+	position: absolute;
+	top: 13%;
+	left: 54.8%;
+	font-family: Comic Sans MS;
+	border: none;
+	outline: none;
+	height: 38px;
+	width: 13%;
+	color: white;
+	font-size: 18px;
+	background:   #424949 ;
+	
+	cursor: pointer;
+	border-radius: 40px 40px 0px 0px;
+	box-shadow: -1px 0px 3px black;
+	
+}
+
+/*home Button*/
+#home{
+	position: absolute;
+	top: 13%;
+	left: 68.5%;
+	font-family: Comic Sans MS;
+	border: none;
+	outline: none;
+	height: 38px;
+	width: 12%;
+	color: white;
+	font-size: 18px;
+	background:  green;
+	
+	cursor: pointer;
+	border-radius: 40px 40px 0px 0px;
+	box-shadow: -1px 0px 3px black;
+	
+}
+#home:hover
+{
+	opacity: 0.9;
+	font-family: Comic Sans MS;
+	background:   #1a5276  ;
+	color: white;
+}
+/*logo*/
+.logo{
+	
+	width: 20%;
+	margin-top: -35%;
+	margin-left: 80%;
+}
+
+/*Sign*/
+.sign{
+	
+	margin-top: 7.5%;
+	margin-left: 63%;
+}

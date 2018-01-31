@@ -1,0 +1,282 @@
+body
+{
+	
+	margin: 0;
+	padding: 0;
+	background: url(dairy.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+}
+.loginBox
+{
+	position: absolute;
+	top: 53%;
+	left: 80%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 495px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.6);
+	box-shadow: 1px 1px 30px gray;
+}
+.user
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 0%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+h2
+{
+	font-family: Hobo Std;
+	margin: 0;
+	padding: 0 0 20px;
+	color: #efed40;
+	text-align: center;
+}
+.loginBox p
+{
+	font-family: Comic Sans MS;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.loginBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+	font-family: Comic Sans MS;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+::placeholder
+{
+	color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]
+{
+		font-family: Comic Sans MS;
+	border: none;
+	outline: none;
+	height: 40px;
+	color: black;
+	font-size: 18px;
+	background: #808000;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover
+{
+	font-family: Comic Sans MS;
+	background: #efed40;
+	color: #262626;
+}
+.loginBox a
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#reg_but{
+	
+	padding-left: 68%;
+	
+}
+#register{
+	
+	font-family: Comic Sans MS;
+	border: none;
+	outline: none;
+	height: 25px;
+	color: white;
+	font-size: 15px;
+	background:   #8e44ad  ;
+	cursor: pointer;
+	border-radius: 40px;
+	
+}
+#register:hover
+{
+	font-family: Comic Sans MS;
+	background:  #5b2c6f ;
+	color: white;
+}
+
+
+/*Roating text*/
+
+.text {
+  font-family: Masque;
+  text-shadow: 2px 2px 4px white;
+  font-weight: 600;
+  font-size: 48px;
+  position: absolute;
+  width: 450px;
+  left: 45%;
+  margin-left: -625px;
+  height: 40px;
+  top: 8%;
+  margin-top: -20px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 300px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+          transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.speed {
+  color: #8e44ad;
+}
+
+.catchy {
+  color: #2980b9;
+}
+
+.secure {
+  color: #c0392b;
+}
+
+.simple{
+  color:  #2874a6 ;
+}
+
+.durable {
+  color: #2c3e50;
+}
+.strong {
+  color: green;
+}
+.sole{
+  color:  #ff1d46 ;
+}
+
+/*Foot bar*/
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height:5%;
+   width: 100%;
+  background: rgba(0,0,0,.6);
+   color: white;
+   text-align: center;
+}
+.footer p{
+	padding-top: 0.5%; 
+	font-family: Comic Sans MS;
+	color: gray;
+	font-size: 15px;
+	
+}
+
+#tagline p{
+	padding-top: 6%; 
+	padding-left: 4.3%; 
+	font-family: Comic Sans MS;
+	color: black;
+	font-size: 22px;
+	text-shadow: 2px 2px 4px white;
+}
+/*Scrolling text*/
+#scroll{
+	position: absolute;
+	top: 53%;
+	left: 36%;
+	transform: translate(-50%,-50%);
+	width: 960px;
+	height: 495px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.3);
+	box-shadow: 1px 1px 30px gray;
+}
+#scroll_text{
+		
+		height: 110%;
+		font-family: Comic Sans MS;
+	color:  #aed6f1 ;
+	font-size: 20px;
+}
+/*About Button*/
+#about{
+	position: absolute;
+	top: 13.2%;
+	left: 52.2%;
+	font-family: Comic Sans MS;
+	border: none;
+	outline: none;
+	height: 38px;
+	width: 15%;
+	color: white;
+	font-size: 18px;
+	background:   #424949 ;
+	opacity: 0.5;
+	cursor: pointer;
+	border-radius: 40px 40px 0px 0px;
+	box-shadow: -1px 0px 3px black;
+	
+}
+#about:hover
+{
+	opacity: 0.9;
+	font-family: Comic Sans MS;
+	background:   #1a5276  ;
+	color: white;
+}
+
